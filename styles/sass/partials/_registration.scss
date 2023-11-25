@@ -1,0 +1,85 @@
+.registrations {
+  background: #cecfcf;
+  .registration {
+    @include d-flex(row, space-between);
+    padding-top: 40px;
+    &__left {
+      flex-basis: 50%;
+      @include d-flex(column, space-between);
+      &--title {
+        @include font-customizer(700, #000);
+        font-size: 48px;
+      }
+      &--form {
+        padding-top: 40px;
+        @include d-flex(column, space-between);
+        gap: 40px;
+        label {
+          @include font-customizer(700, #000);
+        }
+        input {
+          border-radius: 20px;
+          border: none;
+          background: rgba(11, 21, 60, 0.15);
+          padding: 20px 30px;
+          &::placeholder {
+            @include font-customizer(500, rgba(0, 0, 0, 0.25));
+          }
+        }
+        .number--verify {
+          @include d-flex(row, space-between);
+        }
+        button {
+          background-color: $primary-blue;
+          box-shadow: none;
+          @include font-customizer(700);
+        }
+      }
+      .already-registered {
+        padding-top: 40px;
+        @include d-flex(row, space-around);
+        p {
+          @include font-customizer(600, rgba(0, 0, 0, 0.5));
+          font-size: 20px;
+        }
+        a {
+          @include font-customizer(600, $primary-blue);
+          font-size: 20px;
+        }
+      }
+    }
+    &__right {
+      background: #0b153c;
+      flex-basis: 30%;
+      min-height: 550px;
+      align-self: center;
+      border-radius: 20px;
+      position: relative;
+      &--title {
+        @include font-customizer(700);
+        padding-top: 40px;
+        text-align: center;
+        span {
+          display: block;
+        }
+      }
+      .corona {
+        position: absolute;
+        left: -25px;
+        top: -25px;
+      }
+      .vaccine {
+        position: absolute;
+        bottom: 0;
+      }
+      .btn {
+        @include font-customizer(700);
+        font-size: 20px;
+        position: absolute;
+        bottom: 75px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

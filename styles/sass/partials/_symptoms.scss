@@ -1,0 +1,65 @@
+.symptoms {
+  background: blue;
+  .symptom {
+    @include d-flex(column, space-between);
+    &__texts {
+      @include d-flex(column, space-between);
+      text-align: center;
+      padding-top: 70px;
+      .top {
+        @include font-customizer(700);
+      }
+      .title {
+        @include font-customizer(800);
+        font-size: 48px;
+        span {
+          color: $primary-blue;
+          font-size: 48px;
+        }
+      }
+      .dscrip {
+        @include font-customizer(500, $light-gray);
+      }
+    }
+    &__bullets {
+      position: relative;
+      min-height: 531px;
+      img {
+        @include center-element;
+      }
+      &--points {
+        position: relative;
+        top: 0;
+        @include d-flex(row, space-between);
+        @mixin bullet-points {
+          .point {
+            text-align: center;
+            position: relative;
+            width: 300px;
+            p {
+              @include font-customizer(600, $primary-blue);
+              font-size: 20px;
+              border-radius: 10px;
+              background: rgba(196, 196, 196, 0.2);
+              padding: 23px 0;
+            }
+          }
+        }
+        .bullet--left {
+          @include bullet-points;
+          img {
+            position: absolute;
+            left: 0;
+          }
+        }
+        .bullet--right {
+          @include bullet-points;
+          img {
+            position: absolute;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}
