@@ -15,12 +15,13 @@
     }
   }
   &--title {
-    @include d-flex(row, flex-start);
+    @include d-flex(row);
     align-items: center;
     margin-bottom: 20px;
     @include icon-container;
     p {
       @include font-customizer(700, #fff);
+      line-height: 0.5;
     }
   }
 
@@ -34,24 +35,23 @@
       @include d-flex(row, space-between);
       gap: 50px;
       .bottom__form--item {
-        @include d-flex(row, flex-start);
+        @include d-flex(row);
         align-items: center;
         gap: 10px;
         @include icon-container;
         label {
           display: block;
           @include font-customizer(600, $light-gray);
-          line-height: normal;
         }
         .answer {
           @include font-customizer(700, #fff);
-          line-height: normal;
         }
       }
     }
     .btn {
       background-color: $primary-blue;
       @include font-customizer(700, #fff);
+      line-height: 0.5;
     }
   }
 }

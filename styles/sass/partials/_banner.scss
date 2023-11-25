@@ -10,12 +10,10 @@
       gap: 40px;
       .texts__top {
         @include font-customizer(700, $primary-blue);
-        line-height: normal;
       }
       .texts__title {
         @include font-customizer(700, #fff);
         font-size: 48px;
-        line-height: normal;
         .light-blue {
           color: $primary-blue;
           font-size: 48px;
@@ -23,7 +21,6 @@
       }
       .texts__bottom {
         @include font-customizer(700, $darker-gray);
-        line-height: normal;
       }
     }
     &--buttons {
@@ -33,6 +30,7 @@
         border: 2px solid #17c2ec;
         background: rgba(196, 196, 196, 0.1);
         @include font-customizer(700, #fff);
+        line-height: 0.5;
       }
       .active {
         background-color: $primary-blue;
@@ -45,9 +43,6 @@
     padding: 0 40px;
     &--images {
       position: relative;
-      .main--img {
-        // width: 100%;
-      }
       @mixin side-image {
         background-color: #fff;
         width: 100px;
@@ -74,7 +69,7 @@
     }
 
     &--specialists {
-      @include d-flex(row, flex-start);
+      @include d-flex(row);
       gap: 20px;
       max-width: 80%;
       position: relative;
@@ -88,7 +83,6 @@
 
       .specialists--text {
         @include font-customizer(700, #fff);
-        line-height: normal;
         .light-blue {
           color: $primary-blue;
           display: block;

@@ -1,0 +1,15 @@
+.reason {
+  &__info {
+    @include d-flex(row, space-between);
+    &--title {
+      @include font-customizer(700, #fff);
+      max-width: 500px;
+      font-size: 48px;
+    }
+    &--dscrip {
+      @include font-customizer(400, $light-gray);
+      font-size: 20px;
+      max-width: 540px;
+    }
+  }
+}
