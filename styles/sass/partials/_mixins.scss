@@ -1,0 +1,11 @@
+@mixin font-customizer($weight, $color) {
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin d-flex($layout, $position) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: $layout;
+  justify-content: $position;
+}
