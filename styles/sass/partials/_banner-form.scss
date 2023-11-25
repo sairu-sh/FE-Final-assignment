@@ -1,24 +1,15 @@
 &__bottom {
   @include d-flex(column, flex-start);
   width: 100%;
-  @mixin icon-container {
-    .icon {
-      border-radius: 10px;
-      background: rgba(196, 196, 196, 0.1);
-      width: 50px;
-      height: 50px;
-      position: relative;
-      img {
-        padding: 10px;
-        @include center-element;
-      }
-    }
-  }
   &--title {
     @include d-flex(row);
     align-items: center;
     margin-bottom: 20px;
     @include icon-container;
+    .icon {
+      width: 50px;
+      height: 50px;
+    }
     p {
       @include font-customizer(700, #fff);
       line-height: 0.5;
@@ -39,6 +30,10 @@
         align-items: center;
         gap: 10px;
         @include icon-container;
+        .icon {
+          width: 50px;
+          height: 50px;
+        }
         label {
           display: block;
           @include font-customizer(600, $light-gray);

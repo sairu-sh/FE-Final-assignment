@@ -1,4 +1,4 @@
-@mixin font-customizer($weight, $color) {
+@mixin font-customizer($weight, $color: #fff) {
   font-weight: $weight;
   color: $color;
   line-height: normal;
@@ -22,4 +22,16 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+@mixin icon-container {
+  .icon {
+    border-radius: 10px;
+    background: rgba(196, 196, 196, 0.1);
+    position: relative;
+    img {
+      padding: 10px;
+      @include center-element;
+    }
+  }
 }
