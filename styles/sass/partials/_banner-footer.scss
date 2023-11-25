@@ -1,0 +1,6 @@
+.banner__footer {
+  background: $light-gray;
+  .container {
+    @include d-flex(row, space-between);
+  }
+}

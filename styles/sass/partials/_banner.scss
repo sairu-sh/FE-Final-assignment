@@ -1,0 +1,101 @@
+.banner {
+  @include d-flex(row, space-between);
+  padding-top: 110px;
+  &__left {
+    @include d-flex(column, flex-start);
+    flex-basis: 45%;
+    gap: 70px;
+    &--texts {
+      @include d-flex(column, flex-start);
+      gap: 40px;
+      .texts__top {
+        @include font-customizer(700, $primary-blue);
+        line-height: normal;
+      }
+      .texts__title {
+        @include font-customizer(700, #fff);
+        font-size: 48px;
+        line-height: normal;
+        .light-blue {
+          color: $primary-blue;
+          font-size: 48px;
+        }
+      }
+      .texts__bottom {
+        @include font-customizer(700, $darker-gray);
+        line-height: normal;
+      }
+    }
+    &--buttons {
+      display: flex;
+      gap: 5%;
+      .btn {
+        border: 2px solid #17c2ec;
+        background: rgba(196, 196, 196, 0.1);
+        @include font-customizer(700, #fff);
+      }
+      .active {
+        background-color: $primary-blue;
+      }
+    }
+  }
+  &__right {
+    flex-basis: 45%;
+    position: relative;
+    padding: 0 40px;
+    &--images {
+      position: relative;
+      .main--img {
+        // width: 100%;
+      }
+      @mixin side-image {
+        background-color: #fff;
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+      }
+      .left__side--images {
+        @include side-image;
+        @include center-vertically;
+        left: -45px;
+        img {
+          @include center-element;
+        }
+      }
+
+      .right__side--images {
+        @include side-image;
+        @include center-vertically;
+        right: -45px;
+        img {
+          @include center-element;
+        }
+      }
+    }
+
+    &--specialists {
+      @include d-flex(row, flex-start);
+      gap: 20px;
+      max-width: 80%;
+      position: relative;
+      left: -50px;
+      bottom: 60px;
+      padding: 20px;
+      border-radius: 20px;
+      background: rgba(196, 196, 196, 0.2);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+      .specialists--text {
+        @include font-customizer(700, #fff);
+        line-height: normal;
+        .light-blue {
+          color: $primary-blue;
+          display: block;
+        }
+      }
+    }
+  }
+
+  @import "banner-form";
+}

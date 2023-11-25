@@ -1,6 +1,7 @@
 @mixin font-customizer($weight, $color) {
   font-weight: $weight;
   color: $color;
+  line-height: 0.5;
 }
 
 @mixin d-flex($layout, $position) {
@@ -8,4 +9,17 @@
   flex-wrap: wrap;
   flex-direction: $layout;
   justify-content: $position;
+}
+
+@mixin center-element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin center-vertically {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }

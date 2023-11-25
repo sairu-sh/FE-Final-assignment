@@ -349,3 +349,22 @@ template {
 [hidden] {
   display: none;
 }
+
+/* For Chrome, Edge, and Safari */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+/* For Firefox */
+input[type="date"] {
+  -moz-appearance: none;
+}
+
+input[type="date"]::-moz-calendar-picker-indicator {
+  display: none;
+}
+
+/* For Edge Legacy */
+input[type="date"]::-ms-clear {
+  display: none;
+}

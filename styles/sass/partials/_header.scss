@@ -1,5 +1,4 @@
 .head {
-  background-color: #0b153c;
   .header {
     padding-top: 50px;
     background: transparent;
@@ -27,6 +26,7 @@
       .header__nav {
         flex-basis: 60%;
         @include d-flex(row, space-between);
+        position: relative;
         gap: 25px;
         &--item {
           color: $light-gray;
