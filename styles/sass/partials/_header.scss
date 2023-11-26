@@ -1,13 +1,20 @@
 .head {
+  background-image: url("/assets/images/background.svg");
+  // @media screen and (max-width: 1024px) {
+  //   background-image: url(/assets/images/background2.svg);
+  // }
+  width: 100%;
   .header {
     padding-top: 50px;
     background: transparent;
     @include d-flex(row, space-between);
     align-items: center;
-    .logo-container {
+    .logo__container {
+      flex-basis: 20%;
       .logo {
-        text-decoration: none;
         position: relative;
+        @include font-customizer(700, #fff);
+        font-size: 25.498px;
         &::after {
           content: "";
           position: absolute;
@@ -15,7 +22,7 @@
           bottom: 0;
           height: 3px;
           width: 40%;
-          background-color: $primary-blue; // Set the desired color
+          background-color: $primary-blue;
         }
       }
     }
@@ -34,15 +41,18 @@
           &::after {
             content: "";
             position: absolute;
-            bottom: -5px; /* Adjust the distance from the text to the dot */
+            bottom: -12px;
             left: 50%;
             transform: translateX(-50%);
-            width: 10px; /* Adjust the size of the dot */
+            width: 10px;
             height: 10px;
-            background-color: blue;
+            background-color: $primary-blue;
             border-radius: 50%;
           }
         }
+      }
+      @media screen and (max-width: 1024px) {
+        display: none;
       }
     }
     .button__div {
@@ -51,6 +61,21 @@
         max-width: 90%;
         color: $primary-blue;
         font-weight: 700;
+      }
+      @media screen and (max-width: 1024px) {
+        display: none;
+      }
+    }
+    .hamburger {
+      display: none;
+      border-radius: 10px;
+      max-height: 45px;
+      background: rgba(196, 196, 196, 0.15);
+      img {
+        padding: 5px;
+      }
+      @media screen and (max-width: 1024px) {
+        display: inline;
       }
     }
   }

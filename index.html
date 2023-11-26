@@ -9,10 +9,8 @@
   <body>
     <div class="head">
       <header class="header container">
-        <div class="logo-container">
-          <figure class="logo">
-            <img src="assets/images/logo.svg" alt="logo" />
-          </figure>
+        <div class="logo__container">
+          <p class="logo">Vaccination.ng</p>
         </div>
         <nav>
           <ul class="header__nav">
@@ -25,6 +23,9 @@
         <div class="button__div">
           <button class="btn medium">Check Status</button>
         </div>
+        <div class="hamburger">
+          <img src="assets/images/hamburger.svg" alt="hamburger" />
+        </div>
       </header>
 
       <section class="banner container">
@@ -32,7 +33,8 @@
           <div class="banner__left--texts">
             <p class="texts__top">Get Vaccinated. Boost your Immune System</p>
             <p class="texts__title">
-              COVID-19 Vaccination Got Easier With,
+              COVID-19 Vaccination <br />
+              Got Easier With,
               <span class="light-blue">Vaccination.ng</span>
             </p>
             <p class="texts__bottom">
@@ -234,6 +236,11 @@
               provided number
             </p>
             <div class="number--verify">
+              <select name="country" id="country">
+                <option value="nigeria">
+                  <img src="assets/images/registration/nigeria.svg" alt="" />
+                </option>
+              </select>
               <input type="tel" placeholder="Phone number" />
               <button class="btn">Verify</button>
             </div>

@@ -1,5 +1,6 @@
 .reason {
   padding-top: 60px;
+  background-image: url("/assets/images/reason/background.svg");
   &__info {
     @include d-flex(row, space-between);
     &--title {

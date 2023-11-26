@@ -1,15 +1,28 @@
 .banner {
   @include d-flex(row, space-between);
   padding-top: 110px;
+  @media screen and (max-width: 1024px) {
+    @include d-flex(column);
+  }
   &__left {
     @include d-flex(column, flex-start);
     flex-basis: 45%;
     gap: 70px;
+
+    @media screen and (max-width: 1024px) {
+      max-width: 505px;
+      gap: 30px;
+      padding-bottom: 55px;
+    }
     &--texts {
       @include d-flex(column, flex-start);
       gap: 40px;
       .texts__top {
         @include font-customizer(700, $primary-blue);
+        white-space: nowrap;
+        @media screen and (max-width: 1024px) {
+          font-size: 18px;
+        }
       }
       .texts__title {
         @include font-customizer(700, #fff);
@@ -17,10 +30,17 @@
         .light-blue {
           color: $primary-blue;
           font-size: 48px;
+          display: block;
+        }
+        @media screen and (max-width: 1024px) {
+          font-size: 36px;
         }
       }
       .texts__bottom {
         @include font-customizer(700, $darker-gray);
+        @media screen and (max-width: 1024px) {
+          font-size: 20px;
+        }
       }
     }
     &--buttons {
@@ -31,6 +51,9 @@
         background: rgba(196, 196, 196, 0.1);
         @include font-customizer(700, #fff);
         line-height: 0.5;
+        @media screen and (max-width: 1024px) {
+          font-size: 20px;
+        }
       }
       .active {
         background-color: $primary-blue;
@@ -41,6 +64,7 @@
     flex-basis: 45%;
     position: relative;
     padding: 0 40px;
+    width: 613px;
     &--images {
       position: relative;
       @mixin side-image {

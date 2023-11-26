@@ -2,5 +2,10 @@
   background: $light-gray;
   .container {
     @include d-flex(row, space-between);
+    img {
+      @media screen and (max-width: 1024px) {
+        max-width: 148.444px;
+      }
+    }
   }
 }

@@ -43,10 +43,18 @@
         }
       }
     }
+    @media screen and (max-width: 1024px) {
+      position: relative;
+    }
     .btn {
       background-color: $primary-blue;
       @include font-customizer(700, #fff);
-      line-height: 0.5;
+      @media screen and (max-width: 1024px) {
+        position: absolute;
+        bottom: 45px;
+        right: 40px;
+        width: 305px;
+      }
     }
   }
 }

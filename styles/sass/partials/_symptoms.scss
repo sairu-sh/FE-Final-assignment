@@ -1,5 +1,5 @@
 .symptoms {
-  background: blue;
+  background-image: url("/assets/images/syptoms/background.svg");
   .symptom {
     @include d-flex(column, space-between);
     &__texts {
@@ -76,6 +76,7 @@
           @include d-flex(row);
           flex-wrap: nowrap;
           padding-left: 5%;
+          padding-bottom: 20px;
           gap: 50%;
           img {
             position: absolute;
