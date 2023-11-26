@@ -1176,6 +1176,11 @@ button {
 .symptoms {
   background-image: url("/assets/images/syptoms/background.svg");
 }
+@media screen and (max-width: 1024px) {
+  .symptoms {
+    max-height: 650px;
+  }
+}
 .symptoms .symptom {
   display: flex;
   flex-wrap: wrap;
@@ -1190,36 +1195,62 @@ button {
   text-align: center;
   padding: 70px 0 180px;
 }
+@media screen and (max-width: 1024px) {
+  .symptoms .symptom__texts {
+    padding-bottom: 60px;
+  }
+}
 .symptoms .symptom__texts .top {
   font-weight: 700;
   color: #fff;
   line-height: normal;
+  font-size: 20px;
 }
 .symptoms .symptom__texts .title {
   font-weight: 800;
   color: #fff;
   line-height: normal;
   font-size: 48px;
+  font-size: 36px;
 }
 .symptoms .symptom__texts .title span {
   color: #17c2ec;
   font-size: 48px;
+  font-size: 36px;
 }
 .symptoms .symptom__texts .dscrip {
   font-weight: 500;
   color: rgba(255, 255, 255, 0.5);
   line-height: normal;
+  font-size: 18px;
+}
+@media screen and (max-width: 1024px) {
+  .symptoms .symptom__texts .dscrip {
+    max-width: 550px;
+    align-self: center;
+    padding-top: 40px;
+  }
 }
 .symptoms .symptom__bullets {
   position: relative;
   min-height: 531px;
   height: 100%;
 }
+@media screen and (max-width: 1024px) {
+  .symptoms .symptom__bullets {
+    height: 345px;
+    margin-bottom: 0;
+  }
+}
 .symptoms .symptom__bullets img {
   position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 1024px) {
+  .symptoms .symptom__bullets img {
+    width: 460px;
+  }
 }
 .symptoms .symptom__bullets--points {
   position: relative;
@@ -1231,6 +1262,13 @@ button {
   flex-direction: column;
   justify-content: space-between;
 }
+@media screen and (max-width: 1024px) {
+  .symptoms .symptom__bullets--points {
+    justify-content: flex-start;
+    gap: 70px;
+    height: 345px;
+  }
+}
 .symptoms .symptom__bullets--points .bullet--top {
   display: flex;
   flex-wrap: wrap;
@@ -1241,7 +1279,7 @@ button {
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: nowrap;
-  gap: 30%;
+  gap: 25%;
   padding-left: 15%;
 }
 .symptoms .symptom__bullets--points .bullet--top .point {
@@ -1256,11 +1294,24 @@ button {
   font-size: 20px;
   border-radius: 10px;
   background: rgba(196, 196, 196, 0.2);
-  padding: 23px 0;
+  padding: 23px 25px;
+  white-space: nowrap;
+  font-size: 18px;
+}
+@media screen and (max-width: 1024px) {
+  .symptoms .symptom__bullets--points .bullet--top .point p {
+    padding: 12px 30px;
+  }
 }
 .symptoms .symptom__bullets--points .bullet--top img {
   position: absolute;
-  left: 0;
+  left: 0px;
+  top: -5px;
+}
+@media screen and (max-width: 1024px) {
+  .symptoms .symptom__bullets--points .bullet--top img {
+    width: 65px;
+  }
 }
 .symptoms .symptom__bullets--points .bullet--mid {
   display: flex;
@@ -1273,7 +1324,7 @@ button {
   justify-content: flex-start;
   flex-wrap: nowrap;
   padding-left: 10%;
-  gap: 40%;
+  gap: 30%;
 }
 .symptoms .symptom__bullets--points .bullet--mid .point {
   text-align: center;
@@ -1287,11 +1338,24 @@ button {
   font-size: 20px;
   border-radius: 10px;
   background: rgba(196, 196, 196, 0.2);
-  padding: 23px 0;
+  padding: 23px 25px;
+  white-space: nowrap;
+  font-size: 18px;
+}
+@media screen and (max-width: 1024px) {
+  .symptoms .symptom__bullets--points .bullet--mid .point p {
+    padding: 12px 30px;
+  }
 }
 .symptoms .symptom__bullets--points .bullet--mid img {
   position: absolute;
-  left: 0;
+  left: 0px;
+  top: -5px;
+}
+@media screen and (max-width: 1024px) {
+  .symptoms .symptom__bullets--points .bullet--mid img {
+    width: 65px;
+  }
 }
 .symptoms .symptom__bullets--points .bullet--bot {
   display: flex;
@@ -1319,11 +1383,24 @@ button {
   font-size: 20px;
   border-radius: 10px;
   background: rgba(196, 196, 196, 0.2);
-  padding: 23px 0;
+  padding: 23px 25px;
+  white-space: nowrap;
+  font-size: 18px;
+}
+@media screen and (max-width: 1024px) {
+  .symptoms .symptom__bullets--points .bullet--bot .point p {
+    padding: 12px 30px;
+  }
 }
 .symptoms .symptom__bullets--points .bullet--bot img {
   position: absolute;
-  left: 0;
+  left: 0px;
+  top: -5px;
+}
+@media screen and (max-width: 1024px) {
+  .symptoms .symptom__bullets--points .bullet--bot img {
+    width: 65px;
+  }
 }
 
 .feedbacks {

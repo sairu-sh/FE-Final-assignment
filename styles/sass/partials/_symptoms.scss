@@ -1,32 +1,55 @@
 .symptoms {
   background-image: url("/assets/images/syptoms/background.svg");
+  @media screen and (max-width: 1024px) {
+    max-height: 650px;
+  }
   .symptom {
     @include d-flex(column, space-between);
     &__texts {
       @include d-flex(column, space-between);
       text-align: center;
       padding: 70px 0 180px;
+      @media screen and (max-width: 1024px) {
+        padding-bottom: 60px;
+      }
       .top {
         @include font-customizer(700);
+        @include tablet-font(20px);
       }
       .title {
         @include font-customizer(800);
         font-size: 48px;
+        @include tablet-font(36px);
         span {
           color: $primary-blue;
           font-size: 48px;
+          @include tablet-font(36px);
         }
       }
       .dscrip {
         @include font-customizer(500, $light-gray);
+        @include tablet-font(18px);
+        @media screen and (max-width: 1024px) {
+          max-width: 550px;
+          align-self: center;
+          padding-top: 40px;
+        }
       }
     }
     &__bullets {
       position: relative;
       min-height: 531px;
       height: 100%;
+      @media screen and (max-width: 1024px) {
+        height: 345px;
+        margin-bottom: 0;
+      }
       img {
-        @include center-element;
+        @include center-horizontally;
+        // position: relative;
+        @media screen and (max-width: 1024px) {
+          width: 460px;
+        }
       }
       &--points {
         position: relative;
@@ -34,6 +57,11 @@
         height: 100%;
         min-height: 531px;
         @include d-flex(column, space-between);
+        @media screen and (max-width: 1024px) {
+          justify-content: flex-start;
+          gap: 70px;
+          height: 345px;
+        }
         @mixin bullet-points {
           @include d-flex(row, space-between);
           .point {
@@ -45,7 +73,22 @@
               font-size: 20px;
               border-radius: 10px;
               background: rgba(196, 196, 196, 0.2);
-              padding: 23px 0;
+              padding: 23px 25px;
+              @media screen and (max-width: 1024px) {
+                padding: 12px 30px;
+              }
+              white-space: nowrap;
+              @include tablet-font(18px);
+            }
+          }
+        }
+        @mixin virus-position {
+          img {
+            position: absolute;
+            left: 0px;
+            top: -5px;
+            @media screen and (max-width: 1024px) {
+              width: 65px;
             }
           }
         }
@@ -53,23 +96,17 @@
           @include bullet-points;
           @include d-flex(row);
           flex-wrap: nowrap;
-          gap: 30%;
+          gap: 25%;
           padding-left: 15%;
-          img {
-            position: absolute;
-            left: 0;
-          }
+          @include virus-position;
         }
         .bullet--mid {
           @include bullet-points;
           @include d-flex(row);
           flex-wrap: nowrap;
           padding-left: 10%;
-          gap: 40%;
-          img {
-            position: absolute;
-            left: 0;
-          }
+          gap: 30%;
+          @include virus-position;
         }
         .bullet--bot {
           @include bullet-points;
@@ -78,10 +115,7 @@
           padding-left: 5%;
           padding-bottom: 20px;
           gap: 50%;
-          img {
-            position: absolute;
-            left: 0;
-          }
+          @include virus-position;
         }
       }
     }
