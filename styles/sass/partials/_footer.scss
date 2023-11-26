@@ -1,6 +1,5 @@
 .footers {
   background-image: url("/assets/images/footer/background.svg");
-  background-color: #000;
   .footer {
     position: relative;
     &__quote {
@@ -11,22 +10,35 @@
       width: 80%;
       max-width: 900px;
       text-align: center;
-      // border: 17px solid #292e58;
       @include d-flex(column, space-between);
+      @media screen and (max-width: 1024px) {
+        top: -80px;
+      }
       .title {
         @include font-customizer(700);
         font-size: 48px;
         padding-top: 70px;
+        @media screen and (max-width: 1024px) {
+          padding-top: 16px;
+          font-size: 36px;
+        }
       }
       .quote {
         label {
           @include font-customizer(500);
           display: block;
           padding-top: 40px;
+          @media screen and (max-width: 1024px) {
+            font-size: 20px;
+            padding-top: 20px;
+          }
         }
         .form__container {
           @include d-flex(row, center);
           padding: 40px 0 70px;
+          @media screen and (max-width: 1024px) {
+            padding: 25px 0 56px;
+          }
           input {
             border-radius: 30px 0px 0px 30px;
             border: none;
@@ -35,6 +47,10 @@
             padding: 28.5px 40px;
             outline: none;
             @include font-customizer(700, #000);
+            @media screen and (max-width: 1024px) {
+              font-size: 20px;
+              height: 75px;
+            }
             &::placeholder {
               @include font-customizer(500, rgba(0, 0, 0, 0.25));
               font-size: 20px;
@@ -55,6 +71,9 @@
     &__bottom {
       position: absolute;
       top: 200px;
+      @media screen and (max-width: 1024px) {
+        top: 100px;
+      }
       @include d-flex(row);
       flex-wrap: nowrap;
       gap: 7%;
@@ -62,7 +81,8 @@
       width: 100%;
       padding: 135px 0;
       @media screen and (max-width: 1024px) {
-        @include d-flex(column, space-between);
+        @include d-flex(column);
+        gap: 40px;
         align-items: flex-start;
       }
       .logo__container {
@@ -71,6 +91,7 @@
           position: relative;
           @include font-customizer(700, #fff);
           font-size: 32px;
+          @include tablet-font(26px);
           &::after {
             content: "";
             position: absolute;
@@ -87,10 +108,15 @@
         .footer__nav {
           @include d-flex(row, space-between);
           flex-wrap: nowrap;
+          @media screen and (max-width: 1024px) {
+            gap: 25px;
+          }
           &--item {
             @include font-customizer(500, $light-gray);
+            @include tablet-font(20px);
             &.active {
               @include font-customizer(700, #fff);
+              @include tablet-font(20px);
             }
           }
         }
@@ -100,11 +126,12 @@
         @include d-flex(row, space-between);
         flex-wrap: nowrap;
         align-items: center;
-        // @media screen and (max-width: 1024px) {
-        //   img {
-        //     width: ;
-        //   }
-        // }
+        @media screen and (max-width: 1024px) {
+          gap: 7px;
+          img {
+            height: 31.448px;
+          }
+        }
       }
     }
   }

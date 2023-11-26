@@ -1453,6 +1453,7 @@ button {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-start;
+    padding-bottom: 100px;
   }
 }
 .feedbacks .feedback__main--item {
@@ -1462,6 +1463,11 @@ button {
 @media screen and (max-width: 1024px) {
   .feedbacks .feedback__main--item {
     padding-left: 30%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .feedbacks .feedback__main--item .vaccine_bg {
+    height: 283px;
   }
 }
 .feedbacks .feedback__main--item .review {
@@ -1479,7 +1485,8 @@ button {
 @media screen and (max-width: 1024px) {
   .feedbacks .feedback__main--item .review {
     max-width: 400px;
-    max-height: 250px;
+    min-height: 250px;
+    margin-left: -80px;
   }
 }
 .feedbacks .feedback__main--item .review__profile {
@@ -1536,10 +1543,14 @@ button {
   height: 200px;
   background: rgba(255, 255, 255, 0.5);
 }
+@media screen and (max-width: 1024px) {
+  .gray__area {
+    display: none;
+  }
+}
 
 .footers {
   background-image: url("/assets/images/footer/background.svg");
-  background-color: #000;
 }
 .footers .footer {
   position: relative;
@@ -1559,12 +1570,23 @@ button {
   flex-direction: column;
   justify-content: space-between;
 }
+@media screen and (max-width: 1024px) {
+  .footers .footer__quote {
+    top: -80px;
+  }
+}
 .footers .footer__quote .title {
   font-weight: 700;
   color: #fff;
   line-height: normal;
   font-size: 48px;
   padding-top: 70px;
+}
+@media screen and (max-width: 1024px) {
+  .footers .footer__quote .title {
+    padding-top: 16px;
+    font-size: 36px;
+  }
 }
 .footers .footer__quote .quote label {
   font-weight: 500;
@@ -1573,12 +1595,23 @@ button {
   display: block;
   padding-top: 40px;
 }
+@media screen and (max-width: 1024px) {
+  .footers .footer__quote .quote label {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+}
 .footers .footer__quote .quote .form__container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   padding: 40px 0 70px;
+}
+@media screen and (max-width: 1024px) {
+  .footers .footer__quote .quote .form__container {
+    padding: 25px 0 56px;
+  }
 }
 .footers .footer__quote .quote .form__container input {
   border-radius: 30px 0px 0px 30px;
@@ -1590,6 +1623,12 @@ button {
   font-weight: 700;
   color: #000;
   line-height: normal;
+}
+@media screen and (max-width: 1024px) {
+  .footers .footer__quote .quote .form__container input {
+    font-size: 20px;
+    height: 75px;
+  }
 }
 .footers .footer__quote .quote .form__container input::placeholder {
   font-weight: 500;
@@ -1621,10 +1660,16 @@ button {
 }
 @media screen and (max-width: 1024px) {
   .footers .footer__bottom {
+    top: 100px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .footers .footer__bottom {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 40px;
     align-items: flex-start;
   }
 }
@@ -1637,6 +1682,7 @@ button {
   color: #fff;
   line-height: normal;
   font-size: 32px;
+  font-size: 26px;
 }
 .footers .footer__bottom .logo__container .logo::after {
   content: "";
@@ -1657,15 +1703,22 @@ button {
   justify-content: space-between;
   flex-wrap: nowrap;
 }
+@media screen and (max-width: 1024px) {
+  .footers .footer__bottom nav .footer__nav {
+    gap: 25px;
+  }
+}
 .footers .footer__bottom nav .footer__nav--item {
   font-weight: 500;
   color: rgba(255, 255, 255, 0.5);
   line-height: normal;
+  font-size: 20px;
 }
 .footers .footer__bottom nav .footer__nav--item.active {
   font-weight: 700;
   color: #fff;
   line-height: normal;
+  font-size: 20px;
 }
 .footers .footer__bottom .icons {
   flex-basis: 20%;
@@ -1675,6 +1728,14 @@ button {
   justify-content: space-between;
   flex-wrap: nowrap;
   align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .footers .footer__bottom .icons {
+    gap: 7px;
+  }
+  .footers .footer__bottom .icons img {
+    height: 31.448px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
