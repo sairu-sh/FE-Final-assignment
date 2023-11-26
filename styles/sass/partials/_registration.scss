@@ -1,5 +1,6 @@
 .registrations {
   background: #cecfcf;
+  padding-bottom: 33px;
   .registration {
     @include d-flex(row, space-between);
     padding-top: 40px;

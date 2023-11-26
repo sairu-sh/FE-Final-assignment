@@ -5,7 +5,7 @@
     &__texts {
       @include d-flex(column, space-between);
       text-align: center;
-      padding-top: 70px;
+      padding: 70px 0 180px;
       .top {
         @include font-customizer(700);
       }
@@ -24,14 +24,18 @@
     &__bullets {
       position: relative;
       min-height: 531px;
+      height: 100%;
       img {
         @include center-element;
       }
       &--points {
         position: relative;
         top: 0;
-        @include d-flex(row, space-between);
+        height: 100%;
+        min-height: 531px;
+        @include d-flex(column, space-between);
         @mixin bullet-points {
+          @include d-flex(row, space-between);
           .point {
             text-align: center;
             position: relative;
@@ -45,18 +49,37 @@
             }
           }
         }
-        .bullet--left {
+        .bullet--top {
           @include bullet-points;
+          @include d-flex(row);
+          flex-wrap: nowrap;
+          gap: 30%;
+          padding-left: 15%;
           img {
             position: absolute;
             left: 0;
           }
         }
-        .bullet--right {
+        .bullet--mid {
           @include bullet-points;
+          @include d-flex(row);
+          flex-wrap: nowrap;
+          padding-left: 10%;
+          gap: 40%;
           img {
             position: absolute;
-            right: 0;
+            left: 0;
+          }
+        }
+        .bullet--bot {
+          @include bullet-points;
+          @include d-flex(row);
+          flex-wrap: nowrap;
+          padding-left: 5%;
+          gap: 50%;
+          img {
+            position: absolute;
+            left: 0;
           }
         }
       }

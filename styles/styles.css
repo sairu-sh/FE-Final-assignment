@@ -854,6 +854,7 @@ body {
 
 .registrations {
   background: #cecfcf;
+  padding-bottom: 33px;
 }
 .registrations .registration {
   display: flex;
@@ -984,7 +985,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  padding-top: 70px;
+  padding: 70px 0 180px;
 }
 .symptoms .symptom__texts .top {
   font-weight: 700;
@@ -1009,6 +1010,7 @@ body {
 .symptoms .symptom__bullets {
   position: relative;
   min-height: 531px;
+  height: 100%;
 }
 .symptoms .symptom__bullets img {
   position: absolute;
@@ -1019,17 +1021,32 @@ body {
 .symptoms .symptom__bullets--points {
   position: relative;
   top: 0;
+  height: 100%;
+  min-height: 531px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.symptoms .symptom__bullets--points .bullet--top {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 30%;
+  padding-left: 15%;
 }
-.symptoms .symptom__bullets--points .bullet--left .point {
+.symptoms .symptom__bullets--points .bullet--top .point {
   text-align: center;
   position: relative;
   width: 300px;
 }
-.symptoms .symptom__bullets--points .bullet--left .point p {
+.symptoms .symptom__bullets--points .bullet--top .point p {
   font-weight: 600;
   color: #17c2ec;
   line-height: normal;
@@ -1038,16 +1055,29 @@ body {
   background: rgba(196, 196, 196, 0.2);
   padding: 23px 0;
 }
-.symptoms .symptom__bullets--points .bullet--left img {
+.symptoms .symptom__bullets--points .bullet--top img {
   position: absolute;
   left: 0;
 }
-.symptoms .symptom__bullets--points .bullet--right .point {
+.symptoms .symptom__bullets--points .bullet--mid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  padding-left: 10%;
+  gap: 40%;
+}
+.symptoms .symptom__bullets--points .bullet--mid .point {
   text-align: center;
   position: relative;
   width: 300px;
 }
-.symptoms .symptom__bullets--points .bullet--right .point p {
+.symptoms .symptom__bullets--points .bullet--mid .point p {
   font-weight: 600;
   color: #17c2ec;
   line-height: normal;
@@ -1056,9 +1086,40 @@ body {
   background: rgba(196, 196, 196, 0.2);
   padding: 23px 0;
 }
-.symptoms .symptom__bullets--points .bullet--right img {
+.symptoms .symptom__bullets--points .bullet--mid img {
   position: absolute;
-  right: 0;
+  left: 0;
+}
+.symptoms .symptom__bullets--points .bullet--bot {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  padding-left: 5%;
+  gap: 50%;
+}
+.symptoms .symptom__bullets--points .bullet--bot .point {
+  text-align: center;
+  position: relative;
+  width: 300px;
+}
+.symptoms .symptom__bullets--points .bullet--bot .point p {
+  font-weight: 600;
+  color: #17c2ec;
+  line-height: normal;
+  font-size: 20px;
+  border-radius: 10px;
+  background: rgba(196, 196, 196, 0.2);
+  padding: 23px 0;
+}
+.symptoms .symptom__bullets--points .bullet--bot img {
+  position: absolute;
+  left: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
