@@ -1014,24 +1014,50 @@ button {
 .registrations .registration {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   padding-top: 40px;
 }
-.registrations .registration__left {
+.registrations .registration--title {
+  font-weight: 700;
+  color: #000;
+  line-height: normal;
+  font-size: 48px;
+  max-width: 460px;
+}
+@media screen and (max-width: 1024px) {
+  .registrations .registration--title {
+    font-size: 36px;
+  }
+}
+.registrations .registration__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1024px) {
+  .registrations .registration__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.registrations .registration__wrapper--left {
   flex-basis: 50%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
 }
-.registrations .registration__left--title {
-  font-weight: 700;
-  color: #000;
-  line-height: normal;
-  font-size: 48px;
+@media screen and (max-width: 1024px) {
+  .registrations .registration__wrapper--left {
+    flex-basis: 80%;
+    order: 2;
+  }
 }
-.registrations .registration__left--form {
+.registrations .registration__wrapper--left .registration__left--form {
   padding-top: 40px;
   display: flex;
   flex-wrap: wrap;
@@ -1039,55 +1065,69 @@ button {
   justify-content: space-between;
   gap: 40px;
 }
-.registrations .registration__left--form label {
+.registrations .registration__wrapper--left .registration__left--form label {
   font-weight: 700;
   color: #000;
   line-height: normal;
 }
-.registrations .registration__left--form input {
+.registrations .registration__wrapper--left .registration__left--form input {
   border-radius: 20px;
   border: none;
   background: rgba(11, 21, 60, 0.15);
   padding: 20px 30px;
 }
-.registrations .registration__left--form input::placeholder {
+.registrations .registration__wrapper--left .registration__left--form input::placeholder {
   font-weight: 500;
   color: rgba(0, 0, 0, 0.25);
   line-height: normal;
 }
-.registrations .registration__left--form .number--verify {
+.registrations .registration__wrapper--left .registration__left--form .number--verify {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+  max-height: 70px;
 }
-.registrations .registration__left--form button {
+@media screen and (max-width: 1024px) {
+  .registrations .registration__wrapper--left .registration__left--form .number--verify .input-field {
+    min-width: 70%;
+  }
+}
+.registrations .registration__wrapper--left .registration__left--form .number--verify .input-field input {
+  width: 80%;
+}
+.registrations .registration__wrapper--left .registration__left--form .number--verify .btn {
+  min-width: 200px;
+  max-height: 67px;
+}
+.registrations .registration__wrapper--left .registration__left--form button {
   background-color: #17c2ec;
   box-shadow: none;
   font-weight: 700;
   color: #fff;
   line-height: normal;
 }
-.registrations .registration__left .already-registered {
+.registrations .registration__wrapper--left .already-registered {
   padding-top: 40px;
+  justify-self: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
 }
-.registrations .registration__left .already-registered p {
+.registrations .registration__wrapper--left .already-registered p {
   font-weight: 600;
   color: rgba(0, 0, 0, 0.5);
   line-height: normal;
   font-size: 20px;
 }
-.registrations .registration__left .already-registered a {
+.registrations .registration__wrapper--left .already-registered a {
   font-weight: 600;
   color: #17c2ec;
   line-height: normal;
   font-size: 20px;
 }
-.registrations .registration__right {
+.registrations .registration__wrapper--right {
   background: #0b153c;
   flex-basis: 30%;
   min-height: 550px;
@@ -1097,26 +1137,32 @@ button {
   border-radius: 20px;
   position: relative;
 }
-.registrations .registration__right--title {
+@media screen and (max-width: 1024px) {
+  .registrations .registration__wrapper--right {
+    align-self: flex-start;
+    margin-top: 65px;
+  }
+}
+.registrations .registration__wrapper--right--title {
   font-weight: 700;
   color: #fff;
   line-height: normal;
   padding-top: 40px;
   text-align: center;
 }
-.registrations .registration__right--title span {
+.registrations .registration__wrapper--right--title span {
   display: block;
 }
-.registrations .registration__right .corona {
+.registrations .registration__wrapper--right .corona {
   position: absolute;
   left: -25px;
   top: -25px;
 }
-.registrations .registration__right .vaccine {
+.registrations .registration__wrapper--right .vaccine {
   position: absolute;
   bottom: 0;
 }
-.registrations .registration__right .btn {
+.registrations .registration__wrapper--right .btn {
   font-weight: 700;
   color: #fff;
   line-height: normal;

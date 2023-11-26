@@ -223,47 +223,52 @@
 
     <section class="registrations">
       <div class="registration container">
-        <div class="registration__left">
-          <p class="registration__left--title">
-            Get your vaccine registration today
-          </p>
-          <form action="#" class="registration__left--form">
-            <label for="name">Patient’s Full Name</label>
-            <input type="text" placeholder="Full name" id="name" />
-            <label for="number">Mobile Number</label>
-            <p class="number--dscrip">
-              Notifications for appointment and reminders will be sent to this
-              provided number
-            </p>
-            <div class="number--verify">
-              <select name="country" id="country">
-                <option value="nigeria">
-                  <img src="assets/images/registration/nigeria.svg" alt="" />
-                </option>
-              </select>
-              <input type="tel" placeholder="Phone number" />
-              <button class="btn">Verify</button>
+        <p class="registration--title">Get your vaccine registration today</p>
+        <div class="registration__wrapper">
+          <div class="registration__wrapper--left">
+            <form action="#" class="registration__left--form">
+              <label for="name">Patient’s Full Name</label>
+              <input type="text" placeholder="Full name" id="name" />
+              <label for="number">Mobile Number</label>
+              <p class="number--dscrip">
+                Notifications for appointment and reminders will be sent to this
+                provided number
+              </p>
+              <div class="number--verify">
+                <div class="input-field">
+                  <select name="country" id="country">
+                    <option value="nigeria">
+                      <img
+                        src="assets/images/registration/nigeria.svg"
+                        alt=""
+                      />
+                    </option>
+                  </select>
+                  <input type="tel" placeholder="Phone number" />
+                </div>
+                <button class="btn">Verify</button>
+              </div>
+              <button class="btn" type="submit">Submit</button>
+            </form>
+            <div class="already-registered">
+              <p>Already registered?</p>
+              <a href="#">Check your status</a>
             </div>
-            <button class="btn" type="submit">Submit</button>
-          </form>
-          <div class="already-registered">
-            <p>Already registered?</p>
-            <a href="#">Check your status</a>
           </div>
-        </div>
-        <div class="registration__right">
-          <p class="registration__right--title">COVID-19 <br />Vaccine</p>
-          <img
-            src="assets/images/registration/corona.svg"
-            alt="corona"
-            class="corona"
-          />
-          <img
-            src="assets/images/registration/vaccine.svg"
-            alt="vaccine"
-            class="vaccine"
-          />
-          <button class="btn">Verify Status</button>
+          <div class="registration__wrapper--right">
+            <p class="registration__right--title">COVID-19 <br />Vaccine</p>
+            <img
+              src="assets/images/registration/corona.svg"
+              alt="corona"
+              class="corona"
+            />
+            <img
+              src="assets/images/registration/vaccine.svg"
+              alt="vaccine"
+              class="vaccine"
+            />
+            <button class="btn">Verify Status</button>
+          </div>
         </div>
       </div>
     </section>
