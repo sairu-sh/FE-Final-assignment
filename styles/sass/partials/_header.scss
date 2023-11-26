@@ -5,12 +5,9 @@
     @include d-flex(row, space-between);
     align-items: center;
     .logo-container {
-      position: relative;
-      display: inline-block;
-
       .logo {
         text-decoration: none;
-
+        position: relative;
         &::after {
           content: "";
           position: absolute;
@@ -33,6 +30,7 @@
         }
         .active {
           color: #fff;
+          position: relative;
           &::after {
             content: "";
             position: absolute;
