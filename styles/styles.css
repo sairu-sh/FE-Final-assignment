@@ -871,12 +871,22 @@ button {
   flex-direction: row;
   justify-content: space-between;
 }
+@media screen and (max-width: 1024px) {
+  .main .reason__info {
+    gap: 40px;
+  }
+}
 .main .reason__info--title {
   font-weight: 700;
   color: #fff;
   line-height: normal;
   max-width: 500px;
   font-size: 48px;
+}
+@media screen and (max-width: 1024px) {
+  .main .reason__info--title {
+    font-size: 36px;
+  }
 }
 .main .reason__info--dscrip {
   font-weight: 400;
@@ -903,6 +913,11 @@ button {
   flex-direction: column;
   justify-content: flex-start;
   gap: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .main .reason__cards--main {
+    flex-basis: 60%;
+  }
 }
 .main .reason__cards--main .icon {
   border-radius: 10px;
@@ -953,6 +968,12 @@ button {
   flex-direction: column;
   justify-content: space-between;
   gap: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .main .reason__cards--normal {
+    flex-basis: 45%;
+    margin-top: 40px;
+  }
 }
 .main .reason__cards--normal .icon {
   border-radius: 10px;
