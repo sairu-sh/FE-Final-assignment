@@ -1,0 +1,67 @@
+.feedbacks {
+  background: #cecfcf;
+  .feedback {
+    padding-top: 60px;
+    @include d-flex(column);
+    &__texts {
+      text-align: center;
+      &--top {
+        @include font-customizer(700, $primary-blue);
+      }
+      &--title {
+        @include font-customizer(800, #000);
+        font-size: 48px;
+      }
+      &--dscrip {
+        @include font-customizer(500, $light-gray);
+      }
+    }
+    &__main {
+      @include d-flex(row, space-between);
+      &--item {
+        position: relative;
+        flex-basis: 30%;
+        .review {
+          border-radius: 20px;
+          background: rgba(196, 196, 196, 0.5);
+          @include d-flex(column);
+          @include center-vertically;
+          &__profile {
+            @include d-flex(row);
+            align-items: flex-end;
+            p {
+              @include font-customizer(700);
+              .location {
+                display: block;
+                @include font-customizer(700, $darker-gray);
+                font-size: 14px;
+              }
+            }
+          }
+          &__message {
+            @include font-customizer(500, rgba(0, 0, 0, 0.6));
+            font-size: 18px;
+            .light-blue {
+              color: $primary-blue;
+              font-size: 18px;
+            }
+          }
+          &.active {
+            background: $primary-blue;
+            &__profile {
+              p {
+                color: #fff;
+                .location {
+                  color: $darker-gray;
+                }
+              }
+            }
+            &__message {
+              color: $darker-gray;
+            }
+          }
+        }
+      }
+    }
+  }
+}

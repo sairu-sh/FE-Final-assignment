@@ -1122,4 +1122,96 @@ body {
   left: 0;
 }
 
+.feedbacks {
+  background: #cecfcf;
+}
+.feedbacks .feedback {
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.feedbacks .feedback__texts {
+  text-align: center;
+}
+.feedbacks .feedback__texts--top {
+  font-weight: 700;
+  color: #17c2ec;
+  line-height: normal;
+}
+.feedbacks .feedback__texts--title {
+  font-weight: 800;
+  color: #000;
+  line-height: normal;
+  font-size: 48px;
+}
+.feedbacks .feedback__texts--dscrip {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: normal;
+}
+.feedbacks .feedback__main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.feedbacks .feedback__main--item {
+  position: relative;
+  flex-basis: 30%;
+}
+.feedbacks .feedback__main--item .review {
+  border-radius: 20px;
+  background: rgba(196, 196, 196, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.feedbacks .feedback__main--item .review__profile {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.feedbacks .feedback__main--item .review__profile p {
+  font-weight: 700;
+  color: #fff;
+  line-height: normal;
+}
+.feedbacks .feedback__main--item .review__profile p .location {
+  display: block;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: normal;
+  font-size: 14px;
+}
+.feedbacks .feedback__main--item .review__message {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: normal;
+  font-size: 18px;
+}
+.feedbacks .feedback__main--item .review__message .light-blue {
+  color: #17c2ec;
+  font-size: 18px;
+}
+.feedbacks .feedback__main--item .review.active {
+  background: #17c2ec;
+}
+.feedbacks .feedback__main--item .review.active__profile p {
+  color: #fff;
+}
+.feedbacks .feedback__main--item .review.active__profile p .location {
+  color: rgba(255, 255, 255, 0.7);
+}
+.feedbacks .feedback__main--item .review.active__message {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 /*# sourceMappingURL=styles.css.map */
