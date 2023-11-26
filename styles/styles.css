@@ -1420,17 +1420,26 @@ button {
   font-weight: 700;
   color: #17c2ec;
   line-height: normal;
+  font-size: 20px;
 }
 .feedbacks .feedback__texts--title {
   font-weight: 800;
   color: #000;
   line-height: normal;
   font-size: 48px;
+  font-size: 36px;
 }
 .feedbacks .feedback__texts--dscrip {
   font-weight: 500;
   color: rgba(255, 255, 255, 0.5);
   line-height: normal;
+}
+@media screen and (max-width: 1024px) {
+  .feedbacks .feedback__texts--dscrip {
+    font-size: 18px;
+    max-width: 585px;
+    margin: 0 auto;
+  }
 }
 .feedbacks .feedback__main {
   display: flex;
@@ -1438,9 +1447,22 @@ button {
   flex-direction: row;
   justify-content: space-between;
 }
+@media screen and (max-width: 1024px) {
+  .feedbacks .feedback__main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
 .feedbacks .feedback__main--item {
   position: relative;
   flex-basis: 31%;
+}
+@media screen and (max-width: 1024px) {
+  .feedbacks .feedback__main--item {
+    padding-left: 30%;
+  }
 }
 .feedbacks .feedback__main--item .review {
   min-height: 323px;
@@ -1453,6 +1475,12 @@ button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+@media screen and (max-width: 1024px) {
+  .feedbacks .feedback__main--item .review {
+    max-width: 400px;
+    max-height: 250px;
+  }
 }
 .feedbacks .feedback__main--item .review__profile {
   display: flex;
@@ -1468,6 +1496,7 @@ button {
   font-weight: 700;
   color: #fff;
   line-height: normal;
+  font-size: 20px;
   padding-bottom: 5px;
 }
 .feedbacks .feedback__main--item .review__profile p .location {
@@ -1483,10 +1512,12 @@ button {
   line-height: normal;
   padding: 30px;
   font-size: 18px;
+  font-size: 14px;
 }
 .feedbacks .feedback__main--item .review__message .light-blue {
   color: #17c2ec;
   font-size: 18px;
+  font-size: 14px;
 }
 .feedbacks .feedback__main--item .review.active {
   background: #17c2ec;
