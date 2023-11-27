@@ -6,7 +6,7 @@
     <title>Vaccine</title>
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
-  <body style="background-image: url(/assets/images/background.svg)">
+  <body style="background-image: url('/assets/images/background.svg')">
     <div class="head">
       <header class="header container">
         <div class="logo__container">
@@ -137,7 +137,7 @@
         </div>
       </section>
     </div>
-    <section class="banner__footer">
+    <section class="banner__footer" style="background: lightgray">
       <div class="container">
         <img src="assets/images/banner/footer/moderna.svg" alt="company" />
         <img src="assets/images/banner/footer/pfizer.svg" alt="company" />
@@ -221,7 +221,7 @@
       </div>
     </section>
 
-    <section class="registrations">
+    <section class="registrations" style="background: #cecfcf">
       <div class="registration container">
         <p class="registration--title">Get your vaccine registration today</p>
         <div class="registration__wrapper">
@@ -322,7 +322,7 @@
       </div>
     </section>
 
-    <section class="feedbacks">
+    <section class="feedbacks" style="background: #cecfcf">
       <div class="feedback container">
         <div class="feedback__texts">
           <p class="feedback__texts--top">FEEDBACK</p>
@@ -400,8 +400,11 @@
         </div>
       </div>
     </section>
-    <section class="gray__area"></section>
-    <section class="footers">
+    <section class="gray__area" style="background: lightgray"></section>
+    <section
+      class="footers"
+      style="background-image: url('/assets/images/footer/background.svg')"
+    >
       <div class="footer container">
         <div class="footer__quote">
           <p class="title">Get a quote</p>
