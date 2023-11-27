@@ -345,10 +345,6 @@ a {
   text-decoration: none;
 }
 
-body {
-  background-image: url("/assets/images/background.svg");
-}
-
 button {
   cursor: pointer;
 }
@@ -845,7 +841,6 @@ button {
 }
 
 .main .result {
-  background-image: url("/assets/images/result/background.svg");
   padding-top: 60px;
   margin-bottom: 60px;
   display: flex;
