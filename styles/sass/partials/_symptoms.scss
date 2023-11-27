@@ -3,6 +3,9 @@
   @media screen and (max-width: 1024px) {
     max-height: 650px;
   }
+  @media screen and (max-width: 575px) {
+    max-height: 346px;
+  }
   .symptom {
     @include d-flex(column, space-between);
     &__texts {
@@ -12,18 +15,24 @@
       @media screen and (max-width: 1024px) {
         padding-bottom: 60px;
       }
+      @media screen and (max-width: 575px) {
+        padding: 25px 0 30px;
+      }
       .top {
         @include font-customizer(700);
         @include tablet-font(20px);
+        @include mobile-font(12px);
       }
       .title {
         @include font-customizer(800);
         font-size: 48px;
         @include tablet-font(36px);
+        @include mobile-font(24px);
         span {
           color: $primary-blue;
           font-size: 48px;
           @include tablet-font(36px);
+          @include mobile-font(24px);
         }
       }
       .dscrip {
@@ -33,6 +42,10 @@
           max-width: 550px;
           align-self: center;
           padding-top: 40px;
+        }
+        @include mobile-font(12px);
+        @media screen and (max-width: 575px) {
+          padding-top: 10px;
         }
       }
     }
@@ -46,9 +59,11 @@
       }
       img {
         @include center-horizontally;
-        // position: relative;
         @media screen and (max-width: 1024px) {
           width: 460px;
+        }
+        @media screen and (max-width: 575px) {
+          width: 222px;
         }
       }
       &--points {
@@ -62,23 +77,35 @@
           gap: 70px;
           height: 345px;
         }
+        @media screen and (max-width: 575px) {
+          justify-content: flex-start;
+          gap: 28px;
+          height: 168px;
+        }
         @mixin bullet-points {
           @include d-flex(row, space-between);
           .point {
             text-align: center;
             position: relative;
             width: 300px;
+            @media screen and (max-width: 575px) {
+              max-width: 115px;
+            }
             p {
               @include font-customizer(600, $primary-blue);
               font-size: 20px;
               border-radius: 10px;
               background: rgba(196, 196, 196, 0.2);
               padding: 23px 25px;
+              white-space: nowrap;
               @media screen and (max-width: 1024px) {
                 padding: 12px 30px;
+                font-size: 18px;
               }
-              white-space: nowrap;
-              @include tablet-font(18px);
+              @media screen and (max-width: 575px) {
+                font-size: 8.753px;
+                padding: 5px 15px;
+              }
             }
           }
         }
@@ -90,6 +117,9 @@
             @media screen and (max-width: 1024px) {
               width: 65px;
             }
+            @media screen and (max-width: 575px) {
+              width: 30px;
+            }
           }
         }
         .bullet--top {
@@ -99,6 +129,9 @@
           gap: 25%;
           padding-left: 15%;
           @include virus-position;
+          @media screen and (max-width: 575px) {
+            gap: 15%;
+          }
         }
         .bullet--mid {
           @include bullet-points;
@@ -107,6 +140,10 @@
           padding-left: 10%;
           gap: 30%;
           @include virus-position;
+          @media screen and (max-width: 575px) {
+            gap: 15%;
+            padding-left: 7%;
+          }
         }
         .bullet--bot {
           @include bullet-points;
@@ -116,6 +153,10 @@
           padding-bottom: 20px;
           gap: 50%;
           @include virus-position;
+          @media screen and (max-width: 575px) {
+            gap: 35%;
+            padding-left: 2%;
+          }
         }
       }
     }

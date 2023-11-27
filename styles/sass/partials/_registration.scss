@@ -8,8 +8,10 @@
       @include font-customizer(700, #000);
       font-size: 48px;
       max-width: 460px;
-      @media screen and (max-width: 1024px) {
-        font-size: 36px;
+      @include tablet-font(36px);
+      @media screen and (max-width: 575px) {
+        font-size: 24px;
+        max-width: 230px;
       }
     }
     &__wrapper {
@@ -31,6 +33,7 @@
           gap: 40px;
           label {
             @include font-customizer(700, #000);
+            @include mobile-font(14px);
           }
           input {
             border-radius: 20px;
@@ -39,7 +42,11 @@
             padding: 20px 30px;
             &::placeholder {
               @include font-customizer(500, rgba(0, 0, 0, 0.25));
+              @include mobile-font(14px);
             }
+          }
+          .number--dscrip {
+            @include mobile-font(14px);
           }
           .number--verify {
             @include d-flex(row, space-between);
@@ -61,6 +68,7 @@
             background-color: $primary-blue;
             box-shadow: none;
             @include font-customizer(700);
+            @include mobile-font(14px);
           }
         }
         .already-registered {
@@ -70,10 +78,12 @@
           p {
             @include font-customizer(600, rgba(0, 0, 0, 0.5));
             font-size: 20px;
+            @include mobile-font(14px);
           }
           a {
             @include font-customizer(600, $primary-blue);
             font-size: 20px;
+            @include mobile-font(14px);
           }
         }
       }
@@ -90,20 +100,34 @@
           align-self: flex-start;
           margin-top: 65px;
         }
+        @media screen and (max-width: 575px) {
+          min-height: 416px;
+          max-width: 285px;
+        }
         &--title {
           @include font-customizer(700);
           padding-top: 40px;
           text-align: center;
+          @include mobile-font(14px);
           span {
             display: block;
+            @include mobile-font(14px);
           }
         }
         .corona {
           position: absolute;
           left: -25px;
           top: -25px;
+          @media screen and (max-width: 575px) {
+            width: 75px;
+            height: 72px;
+          }
         }
         .vaccine {
+          @media screen and (max-width: 575px) {
+            width: 285px;
+            height: 365px;
+          }
           position: absolute;
           bottom: 0;
         }
@@ -111,6 +135,7 @@
           @include font-customizer(700);
           font-size: 20px;
           position: absolute;
+          @include mobile-font(14px);
           bottom: 75px;
           left: 50%;
           transform: translateX(-50%);

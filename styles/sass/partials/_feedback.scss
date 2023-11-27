@@ -8,11 +8,13 @@
       &--top {
         @include font-customizer(700, $primary-blue);
         @include tablet-font(20px);
+        @include mobile-font(14px);
       }
       &--title {
         @include font-customizer(800, #000);
         font-size: 48px;
         @include tablet-font(36px);
+        @include mobile-font(24px);
       }
       &--dscrip {
         @include font-customizer(500, $light-gray);
@@ -21,6 +23,7 @@
           max-width: 585px;
           margin: 0 auto;
         }
+        @include mobile-font(12px);
       }
     }
     &__main {
@@ -61,10 +64,12 @@
               @include font-customizer(700);
               @include tablet-font(20px);
               padding-bottom: 5px;
+              @include mobile-font(14px);
               .location {
                 display: block;
                 @include font-customizer(700, $darker-gray);
                 font-size: 14px;
+                @include mobile-font(10px);
               }
             }
           }
@@ -77,6 +82,7 @@
               color: $primary-blue;
               font-size: 18px;
               @include tablet-font(14px);
+              @include mobile-font(12px);
             }
           }
           &.active {

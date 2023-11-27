@@ -13,6 +13,7 @@
     p {
       @include font-customizer(700, #fff);
       line-height: 0.5;
+      @include mobile-font(14px);
     }
   }
 
@@ -37,9 +38,11 @@
         label {
           display: block;
           @include font-customizer(600, $light-gray);
+          @include mobile-font(14px);
         }
         .answer {
           @include font-customizer(700, #fff);
+          @include mobile-font(14px);
         }
       }
     }
@@ -55,6 +58,7 @@
         right: 40px;
         width: 305px;
       }
+      @include mobile-font(14px);
     }
   }
 }

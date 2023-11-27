@@ -13,11 +13,13 @@
       @media screen and (max-width: 1024px) {
         font-size: 36px;
       }
+      @include mobile-font(24px);
     }
     &--dscrip {
       @include font-customizer(400, $light-gray);
       font-size: 20px;
       max-width: 540px;
+      @include mobile-font(14px);
     }
   }
   &__cards {
@@ -43,15 +45,20 @@
       }
       .reason__title {
         @include font-customizer(700, $primary-blue);
+        @include mobile-font(14px);
       }
       .dscrip {
         @include font-customizer(500);
         font-size: 18px;
+        @include mobile-font(12px);
       }
       a {
         .read-more {
           @include d-flex(row);
           @include font-customizer(700, $primary-blue);
+          p {
+            @include mobile-font(12px);
+          }
           gap: 10px;
         }
       }
@@ -78,11 +85,15 @@
       }
       .reason__title {
         @include font-customizer(700);
+        @include mobile-font(14px);
       }
       a {
         .read-more {
           @include d-flex(row);
           @include font-customizer(700, $light-gray);
+          p {
+            @include mobile-font(14px);
+          }
           gap: 10px;
         }
       }

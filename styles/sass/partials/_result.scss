@@ -12,6 +12,10 @@
     @media screen and (max-width: 1024px) {
       font-size: 20px;
     }
+    @media screen and (max-width: 575px) {
+      font-size: 10px;
+      line-height: normal;
+    }
   }
   .result__bottom {
     border-radius: 0 0 20px 20px;
@@ -39,8 +43,10 @@
         outline: none;
         padding: 20px 25px;
         @include font-customizer(500, #fff);
+        @include mobile-font(12px);
         &::placeholder {
           @include font-customizer(500, $light-gray);
+          @include mobile-font(14px);
         }
         &:focus {
           border: 3px solid $primary-blue;
@@ -52,6 +58,7 @@
       .btn {
         flex-basis: 18%;
         @include font-customizer(700, $primary-blue);
+        @include mobile-font(14px);
         line-height: normal;
         border: 3px solid #17c2ec;
         background: rgba(196, 196, 196, 0.1);
@@ -71,12 +78,14 @@
       @media screen and (max-width: 1024px) {
         font-size: 14px;
       }
+      @include mobile-font(10px);
       .link {
         text-decoration: underline;
         @include font-customizer(700, $primary-blue);
         line-height: 0.5;
         @media screen and (max-width: 1024px) {
           font-size: 14px;
+          @include mobile-font(10px);
         }
       }
     }

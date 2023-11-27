@@ -43,5 +43,13 @@
 }
 
 @mixin tablet-font($size) {
-  font-size: $size;
+  @media screen and (max-width: 1024px) {
+    font-size: $size;
+  }
+}
+
+@mixin mobile-font($size) {
+  @media screen and (max-width: 575px) {
+    font-size: $size;
+  }
 }

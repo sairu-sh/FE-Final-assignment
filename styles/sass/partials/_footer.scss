@@ -22,6 +22,7 @@
           padding-top: 16px;
           font-size: 36px;
         }
+        @include mobile-font(18px);
       }
       .quote {
         label {
@@ -32,6 +33,7 @@
             font-size: 20px;
             padding-top: 20px;
           }
+          @include mobile-font(10px);
         }
         .form__container {
           @include d-flex(row, center);
@@ -51,9 +53,11 @@
               font-size: 20px;
               height: 75px;
             }
+            @include mobile-font(10px);
             &::placeholder {
               @include font-customizer(500, rgba(0, 0, 0, 0.25));
               font-size: 20px;
+              @include mobile-font(10px);
             }
           }
           .send__btn {
@@ -92,6 +96,7 @@
           @include font-customizer(700, #fff);
           font-size: 32px;
           @include tablet-font(26px);
+          @include mobile-font(18px);
           &::after {
             content: "";
             position: absolute;
@@ -114,9 +119,11 @@
           &--item {
             @include font-customizer(500, $light-gray);
             @include tablet-font(20px);
+            @include mobile-font(14px);
             &.active {
               @include font-customizer(700, #fff);
               @include tablet-font(20px);
+              @include mobile-font(14px);
             }
           }
         }

@@ -390,6 +390,11 @@ button {
   line-height: normal;
   font-size: 25.498px;
 }
+@media screen and (max-width: 575px) {
+  .head .header .logo__container .logo {
+    font-size: 21px;
+  }
+}
 .head .header .logo__container .logo::after {
   content: "";
   position: absolute;
@@ -507,6 +512,11 @@ button {
     font-size: 18px;
   }
 }
+@media screen and (max-width: 575px) {
+  .banner__left--texts .texts__top {
+    font-size: 12px;
+  }
+}
 .banner__left--texts .texts__title {
   font-weight: 700;
   color: #fff;
@@ -518,9 +528,19 @@ button {
   font-size: 48px;
   display: block;
 }
+@media screen and (max-width: 575px) {
+  .banner__left--texts .texts__title .light-blue {
+    font-size: 24px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .banner__left--texts .texts__title {
     font-size: 36px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .banner__left--texts .texts__title {
+    font-size: 24px;
   }
 }
 .banner__left--texts .texts__bottom {
@@ -531,6 +551,11 @@ button {
 @media screen and (max-width: 1024px) {
   .banner__left--texts .texts__bottom {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .banner__left--texts .texts__bottom {
+    font-size: 14px;
   }
 }
 .banner__left--buttons {
@@ -550,6 +575,11 @@ button {
     font-size: 20px;
   }
 }
+@media screen and (max-width: 575px) {
+  .banner__left--buttons .btn {
+    font-size: 14px;
+  }
+}
 .banner__left--buttons .active {
   background-color: #17c2ec;
 }
@@ -559,8 +589,20 @@ button {
   padding: 0 40px;
   width: 613px;
 }
+@media screen and (max-width: 575px) {
+  .banner__right {
+    padding: 0;
+    max-width: 256px;
+  }
+}
 .banner__right--images {
   position: relative;
+}
+@media screen and (max-width: 575px) {
+  .banner__right--images .main--img {
+    width: 256px;
+    height: 274px;
+  }
 }
 .banner__right--images .left__side--images {
   background-color: #fff;
@@ -570,13 +612,25 @@ button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: -45px;
+  left: -20px;
+}
+@media screen and (max-width: 575px) {
+  .banner__right--images .left__side--images {
+    width: 50px;
+    height: 50px;
+  }
 }
 .banner__right--images .left__side--images img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 575px) {
+  .banner__right--images .left__side--images img {
+    width: 40px;
+    height: 32px;
+  }
 }
 .banner__right--images .right__side--images {
   background-color: #fff;
@@ -586,13 +640,25 @@ button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: -45px;
+  right: -20px;
+}
+@media screen and (max-width: 575px) {
+  .banner__right--images .right__side--images {
+    width: 50px;
+    height: 50px;
+  }
 }
 .banner__right--images .right__side--images img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 575px) {
+  .banner__right--images .right__side--images img {
+    width: 40px;
+    height: 32px;
+  }
 }
 .banner__right--specialists {
   display: flex;
@@ -614,9 +680,25 @@ button {
   color: #fff;
   line-height: normal;
 }
+@media screen and (max-width: 575px) {
+  .banner__right--specialists .specialists--text {
+    font-size: 14px;
+  }
+}
 .banner__right--specialists .specialists--text .light-blue {
   color: #17c2ec;
   display: block;
+}
+@media screen and (max-width: 575px) {
+  .banner__right--specialists .specialists--text .light-blue {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .banner__right--specialists .specialists--images img {
+    width: 38px;
+    height: 38px;
+  }
 }
 .banner__bottom {
   display: flex;
@@ -654,6 +736,11 @@ button {
   color: #fff;
   line-height: normal;
   line-height: 0.5;
+}
+@media screen and (max-width: 575px) {
+  .banner__bottom--title p {
+    font-size: 14px;
+  }
 }
 .banner__bottom--form {
   width: 100%;
@@ -702,10 +789,20 @@ button {
   color: rgba(255, 255, 255, 0.5);
   line-height: normal;
 }
+@media screen and (max-width: 575px) {
+  .banner__bottom--form .form--container .bottom__form--item label {
+    font-size: 14px;
+  }
+}
 .banner__bottom--form .form--container .bottom__form--item .answer {
   font-weight: 700;
   color: #fff;
   line-height: normal;
+}
+@media screen and (max-width: 575px) {
+  .banner__bottom--form .form--container .bottom__form--item .answer {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .banner__bottom--form {
@@ -724,6 +821,11 @@ button {
     bottom: 45px;
     right: 40px;
     width: 305px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .banner__bottom--form .btn {
+    font-size: 14px;
   }
 }
 
@@ -763,6 +865,12 @@ button {
 @media screen and (max-width: 1024px) {
   .main .result .result__title {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .main .result .result__title {
+    font-size: 10px;
+    line-height: normal;
   }
 }
 .main .result .result__bottom {
@@ -806,10 +914,20 @@ button {
   color: #fff;
   line-height: normal;
 }
+@media screen and (max-width: 575px) {
+  .main .result .result__bottom .result__form input {
+    font-size: 12px;
+  }
+}
 .main .result .result__bottom .result__form input::placeholder {
   font-weight: 500;
   color: rgba(255, 255, 255, 0.5);
   line-height: normal;
+}
+@media screen and (max-width: 575px) {
+  .main .result .result__bottom .result__form input::placeholder {
+    font-size: 14px;
+  }
 }
 .main .result .result__bottom .result__form input:focus {
   border: 3px solid #17c2ec;
@@ -828,6 +946,11 @@ button {
   border: 3px solid #17c2ec;
   background: rgba(196, 196, 196, 0.1);
   padding: 20px 25px;
+}
+@media screen and (max-width: 575px) {
+  .main .result .result__bottom .result__form .btn {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .main .result .result__bottom .result__form .btn {
@@ -849,6 +972,11 @@ button {
     font-size: 14px;
   }
 }
+@media screen and (max-width: 575px) {
+  .main .result .result__bottom .result__link {
+    font-size: 10px;
+  }
+}
 .main .result .result__bottom .result__link .link {
   text-decoration: underline;
   font-weight: 700;
@@ -859,6 +987,11 @@ button {
 @media screen and (max-width: 1024px) {
   .main .result .result__bottom .result__link .link {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 575px) {
+  .main .result .result__bottom .result__link .link {
+    font-size: 10px;
   }
 }
 .main .reason {
@@ -888,12 +1021,22 @@ button {
     font-size: 36px;
   }
 }
+@media screen and (max-width: 575px) {
+  .main .reason__info--title {
+    font-size: 24px;
+  }
+}
 .main .reason__info--dscrip {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
   line-height: normal;
   font-size: 20px;
   max-width: 540px;
+}
+@media screen and (max-width: 575px) {
+  .main .reason__info--dscrip {
+    font-size: 14px;
+  }
 }
 .main .reason__cards {
   display: flex;
@@ -940,11 +1083,21 @@ button {
   color: #17c2ec;
   line-height: normal;
 }
+@media screen and (max-width: 575px) {
+  .main .reason__cards--main .reason__title {
+    font-size: 14px;
+  }
+}
 .main .reason__cards--main .dscrip {
   font-weight: 500;
   color: #fff;
   line-height: normal;
   font-size: 18px;
+}
+@media screen and (max-width: 575px) {
+  .main .reason__cards--main .dscrip {
+    font-size: 12px;
+  }
 }
 .main .reason__cards--main a .read-more {
   display: flex;
@@ -955,6 +1108,11 @@ button {
   color: #17c2ec;
   line-height: normal;
   gap: 10px;
+}
+@media screen and (max-width: 575px) {
+  .main .reason__cards--main a .read-more p {
+    font-size: 12px;
+  }
 }
 .main .reason__cards--normal {
   flex-basis: 28%;
@@ -996,6 +1154,11 @@ button {
   color: #fff;
   line-height: normal;
 }
+@media screen and (max-width: 575px) {
+  .main .reason__cards--normal .reason__title {
+    font-size: 14px;
+  }
+}
 .main .reason__cards--normal a .read-more {
   display: flex;
   flex-wrap: wrap;
@@ -1005,6 +1168,11 @@ button {
   color: rgba(255, 255, 255, 0.5);
   line-height: normal;
   gap: 10px;
+}
+@media screen and (max-width: 575px) {
+  .main .reason__cards--normal a .read-more p {
+    font-size: 14px;
+  }
 }
 
 .registrations {
@@ -1028,6 +1196,12 @@ button {
 @media screen and (max-width: 1024px) {
   .registrations .registration--title {
     font-size: 36px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .registrations .registration--title {
+    font-size: 24px;
+    max-width: 230px;
   }
 }
 .registrations .registration__wrapper {
@@ -1070,6 +1244,11 @@ button {
   color: #000;
   line-height: normal;
 }
+@media screen and (max-width: 575px) {
+  .registrations .registration__wrapper--left .registration__left--form label {
+    font-size: 14px;
+  }
+}
 .registrations .registration__wrapper--left .registration__left--form input {
   border-radius: 20px;
   border: none;
@@ -1080,6 +1259,16 @@ button {
   font-weight: 500;
   color: rgba(0, 0, 0, 0.25);
   line-height: normal;
+}
+@media screen and (max-width: 575px) {
+  .registrations .registration__wrapper--left .registration__left--form input::placeholder {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .registrations .registration__wrapper--left .registration__left--form .number--dscrip {
+    font-size: 14px;
+  }
 }
 .registrations .registration__wrapper--left .registration__left--form .number--verify {
   display: flex;
@@ -1107,6 +1296,11 @@ button {
   color: #fff;
   line-height: normal;
 }
+@media screen and (max-width: 575px) {
+  .registrations .registration__wrapper--left .registration__left--form button {
+    font-size: 14px;
+  }
+}
 .registrations .registration__wrapper--left .already-registered {
   padding-top: 40px;
   justify-self: center;
@@ -1121,11 +1315,21 @@ button {
   line-height: normal;
   font-size: 20px;
 }
+@media screen and (max-width: 575px) {
+  .registrations .registration__wrapper--left .already-registered p {
+    font-size: 14px;
+  }
+}
 .registrations .registration__wrapper--left .already-registered a {
   font-weight: 600;
   color: #17c2ec;
   line-height: normal;
   font-size: 20px;
+}
+@media screen and (max-width: 575px) {
+  .registrations .registration__wrapper--left .already-registered a {
+    font-size: 14px;
+  }
 }
 .registrations .registration__wrapper--right {
   background: #0b153c;
@@ -1143,6 +1347,12 @@ button {
     margin-top: 65px;
   }
 }
+@media screen and (max-width: 575px) {
+  .registrations .registration__wrapper--right {
+    min-height: 416px;
+    max-width: 285px;
+  }
+}
 .registrations .registration__wrapper--right--title {
   font-weight: 700;
   color: #fff;
@@ -1150,17 +1360,39 @@ button {
   padding-top: 40px;
   text-align: center;
 }
+@media screen and (max-width: 575px) {
+  .registrations .registration__wrapper--right--title {
+    font-size: 14px;
+  }
+}
 .registrations .registration__wrapper--right--title span {
   display: block;
+}
+@media screen and (max-width: 575px) {
+  .registrations .registration__wrapper--right--title span {
+    font-size: 14px;
+  }
 }
 .registrations .registration__wrapper--right .corona {
   position: absolute;
   left: -25px;
   top: -25px;
 }
+@media screen and (max-width: 575px) {
+  .registrations .registration__wrapper--right .corona {
+    width: 75px;
+    height: 72px;
+  }
+}
 .registrations .registration__wrapper--right .vaccine {
   position: absolute;
   bottom: 0;
+}
+@media screen and (max-width: 575px) {
+  .registrations .registration__wrapper--right .vaccine {
+    width: 285px;
+    height: 365px;
+  }
 }
 .registrations .registration__wrapper--right .btn {
   font-weight: 700;
@@ -1172,6 +1404,11 @@ button {
   left: 50%;
   transform: translateX(-50%);
 }
+@media screen and (max-width: 575px) {
+  .registrations .registration__wrapper--right .btn {
+    font-size: 14px;
+  }
+}
 
 .symptoms {
   background-image: url("/assets/images/syptoms/background.svg");
@@ -1179,6 +1416,11 @@ button {
 @media screen and (max-width: 1024px) {
   .symptoms {
     max-height: 650px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .symptoms {
+    max-height: 346px;
   }
 }
 .symptoms .symptom {
@@ -1200,35 +1442,81 @@ button {
     padding-bottom: 60px;
   }
 }
+@media screen and (max-width: 575px) {
+  .symptoms .symptom__texts {
+    padding: 25px 0 30px;
+  }
+}
 .symptoms .symptom__texts .top {
   font-weight: 700;
   color: #fff;
   line-height: normal;
-  font-size: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .symptoms .symptom__texts .top {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .symptoms .symptom__texts .top {
+    font-size: 12px;
+  }
 }
 .symptoms .symptom__texts .title {
   font-weight: 800;
   color: #fff;
   line-height: normal;
   font-size: 48px;
-  font-size: 36px;
+}
+@media screen and (max-width: 1024px) {
+  .symptoms .symptom__texts .title {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .symptoms .symptom__texts .title {
+    font-size: 24px;
+  }
 }
 .symptoms .symptom__texts .title span {
   color: #17c2ec;
   font-size: 48px;
-  font-size: 36px;
+}
+@media screen and (max-width: 1024px) {
+  .symptoms .symptom__texts .title span {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .symptoms .symptom__texts .title span {
+    font-size: 24px;
+  }
 }
 .symptoms .symptom__texts .dscrip {
   font-weight: 500;
   color: rgba(255, 255, 255, 0.5);
   line-height: normal;
-  font-size: 18px;
+}
+@media screen and (max-width: 1024px) {
+  .symptoms .symptom__texts .dscrip {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .symptoms .symptom__texts .dscrip {
     max-width: 550px;
     align-self: center;
     padding-top: 40px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .symptoms .symptom__texts .dscrip {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .symptoms .symptom__texts .dscrip {
+    padding-top: 10px;
   }
 }
 .symptoms .symptom__bullets {
@@ -1252,6 +1540,11 @@ button {
     width: 460px;
   }
 }
+@media screen and (max-width: 575px) {
+  .symptoms .symptom__bullets img {
+    width: 222px;
+  }
+}
 .symptoms .symptom__bullets--points {
   position: relative;
   top: 0;
@@ -1267,6 +1560,13 @@ button {
     justify-content: flex-start;
     gap: 70px;
     height: 345px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .symptoms .symptom__bullets--points {
+    justify-content: flex-start;
+    gap: 28px;
+    height: 168px;
   }
 }
 .symptoms .symptom__bullets--points .bullet--top {
@@ -1287,6 +1587,11 @@ button {
   position: relative;
   width: 300px;
 }
+@media screen and (max-width: 575px) {
+  .symptoms .symptom__bullets--points .bullet--top .point {
+    max-width: 115px;
+  }
+}
 .symptoms .symptom__bullets--points .bullet--top .point p {
   font-weight: 600;
   color: #17c2ec;
@@ -1296,11 +1601,17 @@ button {
   background: rgba(196, 196, 196, 0.2);
   padding: 23px 25px;
   white-space: nowrap;
-  font-size: 18px;
 }
 @media screen and (max-width: 1024px) {
   .symptoms .symptom__bullets--points .bullet--top .point p {
     padding: 12px 30px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .symptoms .symptom__bullets--points .bullet--top .point p {
+    font-size: 8.753px;
+    padding: 5px 15px;
   }
 }
 .symptoms .symptom__bullets--points .bullet--top img {
@@ -1311,6 +1622,16 @@ button {
 @media screen and (max-width: 1024px) {
   .symptoms .symptom__bullets--points .bullet--top img {
     width: 65px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .symptoms .symptom__bullets--points .bullet--top img {
+    width: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .symptoms .symptom__bullets--points .bullet--top {
+    gap: 15%;
   }
 }
 .symptoms .symptom__bullets--points .bullet--mid {
@@ -1331,6 +1652,11 @@ button {
   position: relative;
   width: 300px;
 }
+@media screen and (max-width: 575px) {
+  .symptoms .symptom__bullets--points .bullet--mid .point {
+    max-width: 115px;
+  }
+}
 .symptoms .symptom__bullets--points .bullet--mid .point p {
   font-weight: 600;
   color: #17c2ec;
@@ -1340,11 +1666,17 @@ button {
   background: rgba(196, 196, 196, 0.2);
   padding: 23px 25px;
   white-space: nowrap;
-  font-size: 18px;
 }
 @media screen and (max-width: 1024px) {
   .symptoms .symptom__bullets--points .bullet--mid .point p {
     padding: 12px 30px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .symptoms .symptom__bullets--points .bullet--mid .point p {
+    font-size: 8.753px;
+    padding: 5px 15px;
   }
 }
 .symptoms .symptom__bullets--points .bullet--mid img {
@@ -1355,6 +1687,17 @@ button {
 @media screen and (max-width: 1024px) {
   .symptoms .symptom__bullets--points .bullet--mid img {
     width: 65px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .symptoms .symptom__bullets--points .bullet--mid img {
+    width: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .symptoms .symptom__bullets--points .bullet--mid {
+    gap: 15%;
+    padding-left: 7%;
   }
 }
 .symptoms .symptom__bullets--points .bullet--bot {
@@ -1376,6 +1719,11 @@ button {
   position: relative;
   width: 300px;
 }
+@media screen and (max-width: 575px) {
+  .symptoms .symptom__bullets--points .bullet--bot .point {
+    max-width: 115px;
+  }
+}
 .symptoms .symptom__bullets--points .bullet--bot .point p {
   font-weight: 600;
   color: #17c2ec;
@@ -1385,11 +1733,17 @@ button {
   background: rgba(196, 196, 196, 0.2);
   padding: 23px 25px;
   white-space: nowrap;
-  font-size: 18px;
 }
 @media screen and (max-width: 1024px) {
   .symptoms .symptom__bullets--points .bullet--bot .point p {
     padding: 12px 30px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .symptoms .symptom__bullets--points .bullet--bot .point p {
+    font-size: 8.753px;
+    padding: 5px 15px;
   }
 }
 .symptoms .symptom__bullets--points .bullet--bot img {
@@ -1400,6 +1754,17 @@ button {
 @media screen and (max-width: 1024px) {
   .symptoms .symptom__bullets--points .bullet--bot img {
     width: 65px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .symptoms .symptom__bullets--points .bullet--bot img {
+    width: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .symptoms .symptom__bullets--points .bullet--bot {
+    gap: 35%;
+    padding-left: 2%;
   }
 }
 
@@ -1420,14 +1785,32 @@ button {
   font-weight: 700;
   color: #17c2ec;
   line-height: normal;
-  font-size: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .feedbacks .feedback__texts--top {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .feedbacks .feedback__texts--top {
+    font-size: 14px;
+  }
 }
 .feedbacks .feedback__texts--title {
   font-weight: 800;
   color: #000;
   line-height: normal;
   font-size: 48px;
-  font-size: 36px;
+}
+@media screen and (max-width: 1024px) {
+  .feedbacks .feedback__texts--title {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .feedbacks .feedback__texts--title {
+    font-size: 24px;
+  }
 }
 .feedbacks .feedback__texts--dscrip {
   font-weight: 500;
@@ -1439,6 +1822,11 @@ button {
     font-size: 18px;
     max-width: 585px;
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 575px) {
+  .feedbacks .feedback__texts--dscrip {
+    font-size: 12px;
   }
 }
 .feedbacks .feedback__main {
@@ -1503,8 +1891,17 @@ button {
   font-weight: 700;
   color: #fff;
   line-height: normal;
-  font-size: 20px;
   padding-bottom: 5px;
+}
+@media screen and (max-width: 1024px) {
+  .feedbacks .feedback__main--item .review__profile p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .feedbacks .feedback__main--item .review__profile p {
+    font-size: 14px;
+  }
 }
 .feedbacks .feedback__main--item .review__profile p .location {
   display: block;
@@ -1513,18 +1910,36 @@ button {
   line-height: normal;
   font-size: 14px;
 }
+@media screen and (max-width: 575px) {
+  .feedbacks .feedback__main--item .review__profile p .location {
+    font-size: 10px;
+  }
+}
 .feedbacks .feedback__main--item .review__message {
   font-weight: 500;
   color: rgba(0, 0, 0, 0.6);
   line-height: normal;
   padding: 30px;
   font-size: 18px;
-  font-size: 14px;
+}
+@media screen and (max-width: 1024px) {
+  .feedbacks .feedback__main--item .review__message {
+    font-size: 14px;
+  }
 }
 .feedbacks .feedback__main--item .review__message .light-blue {
   color: #17c2ec;
   font-size: 18px;
-  font-size: 14px;
+}
+@media screen and (max-width: 1024px) {
+  .feedbacks .feedback__main--item .review__message .light-blue {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .feedbacks .feedback__main--item .review__message .light-blue {
+    font-size: 12px;
+  }
 }
 .feedbacks .feedback__main--item .review.active {
   background: #17c2ec;
@@ -1588,6 +2003,11 @@ button {
     font-size: 36px;
   }
 }
+@media screen and (max-width: 575px) {
+  .footers .footer__quote .title {
+    font-size: 18px;
+  }
+}
 .footers .footer__quote .quote label {
   font-weight: 500;
   color: #fff;
@@ -1599,6 +2019,11 @@ button {
   .footers .footer__quote .quote label {
     font-size: 20px;
     padding-top: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .footers .footer__quote .quote label {
+    font-size: 10px;
   }
 }
 .footers .footer__quote .quote .form__container {
@@ -1630,11 +2055,21 @@ button {
     height: 75px;
   }
 }
+@media screen and (max-width: 575px) {
+  .footers .footer__quote .quote .form__container input {
+    font-size: 10px;
+  }
+}
 .footers .footer__quote .quote .form__container input::placeholder {
   font-weight: 500;
   color: rgba(0, 0, 0, 0.25);
   line-height: normal;
   font-size: 20px;
+}
+@media screen and (max-width: 575px) {
+  .footers .footer__quote .quote .form__container input::placeholder {
+    font-size: 10px;
+  }
 }
 .footers .footer__quote .quote .form__container .send__btn {
   border-radius: 0px 30px 30px 0px;
@@ -1682,7 +2117,16 @@ button {
   color: #fff;
   line-height: normal;
   font-size: 32px;
-  font-size: 26px;
+}
+@media screen and (max-width: 1024px) {
+  .footers .footer__bottom .logo__container .logo {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .footers .footer__bottom .logo__container .logo {
+    font-size: 18px;
+  }
 }
 .footers .footer__bottom .logo__container .logo::after {
   content: "";
@@ -1712,13 +2156,31 @@ button {
   font-weight: 500;
   color: rgba(255, 255, 255, 0.5);
   line-height: normal;
-  font-size: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .footers .footer__bottom nav .footer__nav--item {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .footers .footer__bottom nav .footer__nav--item {
+    font-size: 14px;
+  }
 }
 .footers .footer__bottom nav .footer__nav--item.active {
   font-weight: 700;
   color: #fff;
   line-height: normal;
-  font-size: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .footers .footer__bottom nav .footer__nav--item.active {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .footers .footer__bottom nav .footer__nav--item.active {
+    font-size: 14px;
+  }
 }
 .footers .footer__bottom .icons {
   flex-basis: 20%;

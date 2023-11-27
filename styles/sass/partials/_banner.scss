@@ -23,6 +23,7 @@
         @media screen and (max-width: 1024px) {
           font-size: 18px;
         }
+        @include mobile-font(12px);
       }
       .texts__title {
         @include font-customizer(700, #fff);
@@ -31,16 +32,19 @@
           color: $primary-blue;
           font-size: 48px;
           display: block;
+          @include mobile-font(24px);
         }
         @media screen and (max-width: 1024px) {
           font-size: 36px;
         }
+        @include mobile-font(24px);
       }
       .texts__bottom {
         @include font-customizer(700, $darker-gray);
         @media screen and (max-width: 1024px) {
           font-size: 20px;
         }
+        @include mobile-font(14px);
       }
     }
     &--buttons {
@@ -54,6 +58,7 @@
         @media screen and (max-width: 1024px) {
           font-size: 20px;
         }
+        @include mobile-font(14px);
       }
       .active {
         background-color: $primary-blue;
@@ -65,29 +70,51 @@
     position: relative;
     padding: 0 40px;
     width: 613px;
+    @media screen and (max-width: 575px) {
+      padding: 0;
+      max-width: 256px;
+    }
     &--images {
       position: relative;
+      .main--img {
+        @media screen and (max-width: 575px) {
+          width: 256px;
+          height: 274px;
+        }
+      }
       @mixin side-image {
         background-color: #fff;
         width: 100px;
         height: 100px;
         border-radius: 20px;
+        @media screen and (max-width: 575px) {
+          width: 50px;
+          height: 50px;
+        }
       }
       .left__side--images {
         @include side-image;
         @include center-vertically;
-        left: -45px;
+        left: -20px;
         img {
           @include center-element;
+          @media screen and (max-width: 575px) {
+            width: 40px;
+            height: 32px;
+          }
         }
       }
 
       .right__side--images {
         @include side-image;
         @include center-vertically;
-        right: -45px;
+        right: -20px;
         img {
           @include center-element;
+          @media screen and (max-width: 575px) {
+            width: 40px;
+            height: 32px;
+          }
         }
       }
     }
@@ -107,9 +134,19 @@
 
       .specialists--text {
         @include font-customizer(700, #fff);
+        @include mobile-font(14px);
         .light-blue {
           color: $primary-blue;
           display: block;
+          @include mobile-font(14px);
+        }
+      }
+      .specialists--images {
+        img {
+          @media screen and (max-width: 575px) {
+            width: 38px;
+            height: 38px;
+          }
         }
       }
     }
